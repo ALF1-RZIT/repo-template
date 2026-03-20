@@ -1,0 +1,6 @@
+# Odpowiedzialni za dokumentację i szablon
+# Zamień @ALF1-RZIT/maintainers na konkretne teamy/org-userów w Twojej organizacji.
+
+/docs/     @ALF1-RZIT/maintainers
+/packages/ @ALF1-RZIT/maintainers
+/.github/  @ALF1-RZIT/maintainers
