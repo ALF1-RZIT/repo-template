@@ -16,11 +16,13 @@
 
 ## Szybki start
 
-1. **Use this repository as a template** → utwórz nowe repo.
+1. **Użyj tego repozytorium jako szablonu** → utwórz nowe repo (przycisk „Use this template" na GitHub).
 2. Stwórz issue opisujące zadanie i kryteria akceptacji.
 3. Branch: `feature/<issue>-<krótki-opis>`.
 4. Otwórz PR z opisem, instrukcjami testowymi i checklistą bezpieczeństwa.
 5. Po review i testach (symulator + fizyczny robot, jeśli konieczne) zmerguj.
+
+> 📖 Szczegółowa instrukcja krok po kroku: [`docs/instrukcja.md`](docs/instrukcja.md)
 
 ---
 
@@ -35,6 +37,7 @@
 │   │   └── bug_report.md           # Szablon zgłoszenia błędu
 │   └── PULL_REQUEST_TEMPLATE.md    # Szablon PR z checklistą bezpieczeństwa
 ├── docs/
+│   ├── instrukcja.md               # Instrukcja krok po kroku — praca z szablonem
 │   └── safety.md                   # Procedury bezpieczeństwa przy pracy z robotem
 ├── packages/
 │   └── alf_example/                # Przykładowy pakiet ROS2 (Python)
