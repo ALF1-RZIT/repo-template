@@ -1,6 +1,6 @@
 ---
 name: Nowa funkcjonalność
-about: Zgłoszenie nowej funkcjonalności lub modułu
+about: Zgłoś propozycję nowej funkcjonalności lub modułu robota
 title: "[FEATURE] "
 labels: enhancement
 assignees: ''
@@ -8,19 +8,24 @@ assignees: ''
 
 ## Opis
 
-<!-- Krótki opis funkcjonalności, którą chcesz dodać. -->
+<!-- Krótki opis funkcjonalności, którą chcesz dodać. Co ma robić i jak ma działać? -->
 
 ## Cel i motywacja
 
-<!-- Dlaczego ta funkcjonalność jest potrzebna? Jaki problem rozwiązuje? -->
+<!-- Dlaczego ta funkcjonalność jest potrzebna? Jaki problem rozwiązuje lub jaką wartość dodaje? -->
 
 ## Kryteria akceptacji
 
-<!-- Lista warunków, które muszą być spełnione, aby uznać zadanie za ukończone. -->
+<!-- Lista mierzalnych warunków, które muszą być spełnione, aby uznać zadanie za ukończone.
+     Każdy warunek powinien być weryfikowalny (testowalny lub demonstrowalny). -->
 
 - [ ] 
 - [ ] 
 - [ ] 
+
+## Proponowane podejście / architektura
+
+<!-- (Opcjonalne) Zarys proponowanego rozwiązania technicznego — węzły ROS2, topiki, algorytmy. -->
 
 ## Zespół / obszar
 
@@ -31,9 +36,10 @@ assignees: ''
 
 ## Plan testów
 
+- [ ] Test jednostkowy / integracyjny
 - [ ] Test w symulatorze
 - [ ] Test na fizycznym robocie (jeśli konieczne)
 
 ## Dodatkowe uwagi
 
-<!-- Linki do dokumentacji, papierów, innych zasobów. -->
+<!-- Linki do dokumentacji, papierów naukowych, innych zasobów lub powiązanych issues. -->

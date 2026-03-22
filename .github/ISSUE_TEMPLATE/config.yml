@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pytania i dyskusje
+    url: https://github.com/ALF1-RZIT/repo-template/discussions
+    about: Ogólne pytania dotyczące projektu lub szablonu zadawaj w Discussions. Zaktualizuj ten URL po utworzeniu repozytorium z szablonu.
