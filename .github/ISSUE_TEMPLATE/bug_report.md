@@ -1,6 +1,6 @@
 ---
 name: Zgłoszenie błędu
-about: Zgłoś błąd, aby pomóc nam go naprawić
+about: Zgłoś błąd w kodzie lub zachowaniu robota, aby pomóc nam go naprawić
 title: "[BUG] "
 labels: bug
 assignees: ''
@@ -8,9 +8,11 @@ assignees: ''
 
 ## Opis błędu
 
-<!-- Zwięzły i jasny opis błędu. -->
+<!-- Zwięzły i jasny opis błędu. Co działa nieprawidłowo? -->
 
 ## Kroki do odtworzenia
+
+<!-- Opisz dokładnie, jak odtworzyć błąd. Im więcej szczegółów, tym łatwiej naprawić. -->
 
 1. 
 2. 
@@ -18,11 +20,11 @@ assignees: ''
 
 ## Oczekiwane zachowanie
 
-<!-- Co powinno się wydarzyć? -->
+<!-- Co powinno się wydarzyć zamiast tego, co się wydarzyło? -->
 
 ## Faktyczne zachowanie
 
-<!-- Co się faktycznie wydarzyło? -->
+<!-- Co się faktycznie wydarzyło? Opisz dokładnie. -->
 
 ## Środowisko
 
@@ -33,8 +35,18 @@ assignees: ''
 
 ## Logi / zrzuty ekranu
 
-<!-- Wklej odpowiednie logi lub dodaj zrzuty ekranu. -->
+<!-- Wklej odpowiednie logi (np. z ros2 topic echo, colcon test-result) lub dodaj zrzuty ekranu. -->
+
+```
+# Wklej logi tutaj
+```
+
+## Krytyczność
+
+- [ ] Krytyczny — uniemożliwia pracę / stwarza zagrożenie bezpieczeństwa
+- [ ] Wysoka — znacząco utrudnia pracę
+- [ ] Niska — drobny problem, istnieje obejście
 
 ## Dodatkowy kontekst
 
-<!-- Inne informacje mogące pomóc w diagnozie błędu. -->
+<!-- Inne informacje mogące pomóc w diagnozie błędu, np. powiązane issues, PR, commit SHA. -->

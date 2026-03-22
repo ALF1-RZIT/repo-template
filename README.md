@@ -33,11 +33,16 @@
 ├── .github/
 │   ├── CODEOWNERS                  # Właściciele kodu
 │   ├── ISSUE_TEMPLATE/
+│   │   ├── config.yml              # Konfiguracja wyboru szablonu issue
 │   │   ├── feature.md              # Szablon zgłoszenia nowej funkcjonalności
-│   │   └── bug_report.md           # Szablon zgłoszenia błędu
+│   │   ├── bug_report.md           # Szablon zgłoszenia błędu
+│   │   └── task.md                 # Szablon ogólnego zadania
+│   ├── rulesets/
+│   │   └── main-protection.json    # Ruleset do importu w ustawieniach repo
 │   └── PULL_REQUEST_TEMPLATE.md    # Szablon PR z checklistą bezpieczeństwa
 ├── docs/
 │   ├── instrukcja.md               # Instrukcja krok po kroku — praca z szablonem
+│   ├── ruleset.md                  # Opis ruleset i instrukcja konfiguracji
 │   └── safety.md                   # Procedury bezpieczeństwa przy pracy z robotem
 ├── packages/
 │   └── alf_example/                # Przykładowy pakiet ROS2 (Python)
@@ -66,6 +71,35 @@
 | **PR** | Opis zmian, instrukcje testowe, checklisty bezpieczeństwa (wypełnione) |
 | **Review** | Min. 1 approver (patrz CODEOWNERS) |
 | **Testy** | Symulator (obowiązkowo) + fizyczny robot (jeśli konieczne) |
+
+---
+
+## Szablony issues
+
+Po utworzeniu repozytorium z tego szablonu dostępne są trzy typy issues:
+
+| Szablon | Prefiks tytułu | Zastosowanie |
+|---------|---------------|-------------|
+| **Nowa funkcjonalność** | `[FEATURE]` | Nowy moduł, algorytm, węzeł ROS2 |
+| **Zgłoszenie błędu** | `[BUG]` | Błąd w kodzie lub niespodziewane zachowanie robota |
+| **Zadanie** | `[TASK]` | Refaktoryzacja, konfiguracja, research, dokumentacja |
+
+Tworzenie pustych issues jest zablokowane — należy zawsze wybrać odpowiedni szablon.
+
+---
+
+## Ruleset — ochrona gałęzi `main`
+
+Plik `.github/rulesets/main-protection.json` zawiera gotowy ruleset GitHub do ochrony gałęzi `main`. Po utworzeniu repozytorium z szablonu **należy go ręcznie zaimportować** w ustawieniach repozytorium.
+
+Ruleset wymusza:
+- **Zakaz bezpośredniego push** na `main` — każda zmiana musi przejść przez PR
+- **Minimum 1 approval** od recenzenta (wymagany CODEOWNER)
+- **Zakaz force-push** i usunięcia gałęzi `main`
+- **Rozwiązanie wszystkich wątków** recenzji przed mergem
+- **Aktualizację brancha** względem `main` przed mergem
+
+> 📖 Szczegółowa instrukcja importu i opis reguł: [`docs/ruleset.md`](docs/ruleset.md)
 
 ---
 

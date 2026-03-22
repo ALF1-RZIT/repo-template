@@ -65,6 +65,7 @@ Po utworzeniu repozytorium:
 1. Przejdź do **Settings → Collaborators and teams** i dodaj odpowiednie zespoły z właściwymi uprawnieniami.
 2. Zaktualizuj plik `CODEOWNERS` — zastąp `@ALF1-RZIT/maintainers` konkretnymi nazwami zespołów lub użytkowników.
 3. Zaktualizuj `docs/safety.md` — uzupełnij sekcję **Kontakty awaryjne**.
+4. Zaimportuj ruleset ochrony gałęzi `main` — szczegóły w [`docs/ruleset.md`](ruleset.md).
 
 ---
 
@@ -116,12 +117,13 @@ Każda nowa funkcjonalność lub poprawka musi zaczynać się od issue na GitHub
 3. Wybierz odpowiedni szablon:
    - **„Nowa funkcjonalność"** — dla nowych modułów i rozszerzeń
    - **„Zgłoszenie błędu"** — dla naprawy istniejącego kodu
+   - **„Zadanie"** — dla prac niekodowych: refaktoryzacja, konfiguracja, dokumentacja, research
 
 ### Krok 4.2 — Wypełnij issue
 
 Uzupełnij wszystkie sekcje szablonu:
 
-- **Tytuł**: `[FEATURE] Krótki opis` lub `[BUG] Krótki opis`
+- **Tytuł**: `[FEATURE] Krótki opis`, `[BUG] Krótki opis` lub `[TASK] Krótki opis`
 - **Opis**: Co ma być zrobione i dlaczego
 - **Cel i motywacja**: Jaki problem rozwiązuje dana funkcjonalność
 - **Kryteria akceptacji**: Lista mierzalnych warunków ukończenia zadania
