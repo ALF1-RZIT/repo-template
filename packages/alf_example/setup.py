@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='ALF1-RZIT Maintainers',
     maintainer_email='maintainers@alf1-rzit.example',
-    description='Przykładowy pakiet ROS2 (Python) — szablon funkcjonalności dla Unitree G1 EDU.',
+    description='Przykładowy pakiet ROS2 (Python) dla Unitree G1 EDU.',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
